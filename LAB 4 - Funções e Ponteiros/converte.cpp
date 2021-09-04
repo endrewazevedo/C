@@ -10,8 +10,6 @@ int main(void){
 	int maior = 0;
 	
 	// Escreva sua solução aqui
-    scanf("%c", &caractere);
-    maior = converte(&caractere);
     while(scanf("%c", &caractere) && caractere != '0'){
         if(maior < converte(&caractere)){
             maior = converte(&caractere);
@@ -19,6 +17,5 @@ int main(void){
     }
 	
     printf("%c", maior);
-	//printf("...", maior);
 	return 0;
 }

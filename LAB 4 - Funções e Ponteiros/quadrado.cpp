@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 void quadrado(int *num){
-	int quadrado = *num;
-	*num = quadrado*quadrado;
+	*num = *num**num;
 }
 
 int main(){

@@ -1,3 +1,6 @@
+//Um bom treino de iteração é escrever programas que desenham padrões. Neste exercício você fará o padrão do triângulo.
+//escreva um programa que lê um número inteiro e desenhe um triangulo.
+
 #include <stdio.h>
 
 int main(void){

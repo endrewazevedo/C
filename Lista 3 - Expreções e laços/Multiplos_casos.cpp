@@ -1,3 +1,5 @@
+//Você deve ler o lado e a altura de um retângulo e calcula seu perímetro e sua área até que as entradas sejam 0;
+
 #include <stdio.h>
 
 int main(void){

@@ -1,3 +1,5 @@
+//Faça um programa que lê várias sequências de números em ponto flutuante e encontra o valor médio desses números.
+
 #include <stdio.h>
 
 int main(){

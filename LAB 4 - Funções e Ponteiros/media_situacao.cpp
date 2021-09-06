@@ -3,8 +3,7 @@
 char situacao(float p1, float p2, float p3, int faltas, int aulas, float *media){
 	float porcent_faltas = ( (float) aulas/100)*25;
 	char sit_aluno;
-	float media_final = (p1+p2+p3)/3;
-	*media = media_final;
+	*media = (p1+p2+p3)/3;
 	if(faltas > porcent_faltas){
 		sit_aluno = 'F';
 		return sit_aluno;

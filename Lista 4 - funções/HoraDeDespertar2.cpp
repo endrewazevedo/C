@@ -11,7 +11,7 @@ int imprimir_horario(int segundos_total){
 	int horas, segundos, minutos;
 	horas = segundos_total/3600;
 	minutos = (segundos_total % 3600)/60;
-    segundos = segundos_total % 60;
+   segundos = segundos_total % 60;
 	if(segundos > 59){
 		segundos = segundos % 60;
 		minutos++;

@@ -8,34 +8,34 @@
 
 void histograma(int n, float *v, int *h){
     for(int i = 0; i < n; i++){
-        if(v[i] >= 0 && v[i] < 0.1){
+        if(v[i] >= 0 && v[i] < (float) 0.1){
             h[0] = h[0] + 1;
         }
-        else if(v[i] >= 0.1 && v[i] < 0.2){
+        else if(v[i] < (float) 0.2){
             h[1] = h[1] + 1;
         }
-        else if(v[i] >= 0.2 && v[i] < 0.3){
+        else if(v[i] < (float) 0.3){
             h[2] = h[2] + 1;
         }
-        else if(v[i] >= 0.3 && v[i] < 0.4){
+        else if(v[i] < (float) 0.4){
             h[3] = h[3] + 1;
         }
-        else if(v[i] >= 0.4 && v[i] < 0.5){
+        else if(v[i] < (float) 0.5){
             h[4] = h[4] + 1;
         }
-        else if(v[i] >= 0.5 && v[i] < 0.6){
+        else if(v[i] < (float) 0.6){
             h[5] = h[5] + 1;
         }
-        else if(v[i] >= 0.6 && v[i] < 0.7){
+        else if(v[i] < (float) 0.7){
             h[6] = h[6] + 1;
         }
-        else if(v[i] >= 0.7 && v[i] < 0.8){
+        else if(v[i] < (float) 0.8){
             h[7] = h[7] + 1;
         }
-        else if(v[i] >= 0.8 && v[i] < 0.9){
+        else if(v[i] < (float) 0.9){
             h[8] = h[8] + 1;
         }
-        else if(v[i] >= 0.9 && v[i] < 1){
+        else if(v[i] < 1){
             h[9] = h[9] + 1;
         }
     }

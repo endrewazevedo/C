@@ -9,18 +9,18 @@ float* transposta (int m, int n, float *mat)
     {
         for (int j = 0; j < m; j++)
         {
-            *(transposta + (i * n) + j) = mat[(j*n) + i];
+            *(vet_trans + (i * n) + j) = mat[(j*n) + i];
         }
     }
-    return transposta;
+    return vet_trans;
 }
 
 int main()
 {
     int linha, coluna;
-    float *mat;
+    float *v;
     scanf("%d %d", &linha, &coluna);
-    mat = malloc(linha * coluna * sizeof(float));
+    v = malloc(linha * coluna * sizeof(float));
 
     // leitura dos elementos da matriz
 
@@ -28,20 +28,20 @@ int main()
     {
         for (int j = 0; j < coluna; j++)
         {
-            scanf("%f", &mat[(i * coluna) + j]);
+            scanf("%f", &v[(i * coluna) + j]);
         }
     }
 
-    printf("\n");
-
-    float *mat_transposta = transposta(linha, coluna, mat);
+    float *tr = transposta(linha, coluna, v);
 
     for (int i = 0; i < linha; i++)
     {
         for (int j = 0; j < coluna; j++)
         {
-            printf("%.2f ", mat_transposta[(i * coluna) + j]);
+            printf("%.2f ", tr[(i * coluna) + j]);
         }
         printf("\n");
     }
+	free(v);
+	free(tr);
 }

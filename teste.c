@@ -1,51 +1,50 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(){
+int ler_matriz(int linha, int coluna, int matriz[][coluna]){
 
-    int num1;
+    int i, j;
 
-    scanf("%d", &num1);
-
-    int i;
-
-    int numAtual;
-
-    int numAnterior = num1;
-
-    int maior = num1;
-
-    int menorPar = 98;
-
-    int menorDif = 99;
-
-    int difAtual;
-
-    int result;
-
-    for(i = 0; i < 4; i++){
-        scanf("%d", &numAtual);
-     
-        if(numAtual > maior){
-            maior = numAtual;
-        }
-
-        if(num1 % 2 == 0 && num1 < menorPar){
-            menorPar = num1;
-        }
-        else if(numAtual % 2 == 0 && numAtual < menorPar){
-            menorPar = numAtual;
-        }
-
-        difAtual = (abs) (numAtual - numAnterior);
-
-        if(difAtual < menorDif){
-            menorDif = difAtual;
-            numAnterior = numAtual;
+    for(i = 0; i < linha; i++){
+        for(j = 0; j < coluna; j++){
+          scanf("%d ", &matriz[i][j]);
         }
     }
 
+}
+
+int imprime_matriz(int linha, int coluna, int matriz[][coluna]){
+
+    int i, j;
+
+    for(i = 0; i < linha; i++){
+        for(j = 0; j < coluna; j++){
+          printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+}
+
+
+
+
+int main(){
+
+    int tamanho;
+
+    scanf("%d", &tamanho);
+
+    int linha, coluna;
+
+    linha = tamanho;
+
+    coluna = tamanho;
     
-    
-    printf("%d %d %d", maior, menorPar, menorDif);
+    int matriz[linha][coluna];
+
+    ler_matriz(linha, coluna, matriz);
+    printf("\n");
+    imprime_matriz(linha, coluna, matriz);    
+
+
 }

@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
 void maiorMenor(int n, int *vet, double media, int *maior, int *menor){
     for(int i = 0; i < n; i++){
         if(vet[i] > media){

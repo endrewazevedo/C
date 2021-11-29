@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #define N 9
 
+void layout(){ //Essa função exibe a tela de boas-vindas
+    printf(" \n Bem vindo ao Sudoku de Maycon\n\n a dificuldade do jogo depende do valor que voce digitara \n\n Por favor digite quantos valores deseja completar \n\n Bom jogo\n\n ");
+}
+
+
 void lerMatriz(unsigned char matriz[][N]){
     for(unsigned char i = 0; i < N; i++){
         for(unsigned char j = 0; j < N; j++){
@@ -175,8 +180,10 @@ int main(){
     unsigned char matriz[N][N], numCelulasEliminadas, x, y, numero;
     int ganhou = 0;
     unsigned seed;
+
     lerMatriz(matriz);
     scanf("%u", &seed);
+    layout();
     scanf("%hhu", &numCelulasEliminadas);
     eliminarCelulas(matriz, numCelulasEliminadas, seed);
     imprimirMatriz(matriz);

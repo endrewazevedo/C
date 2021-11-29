@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int fibonacci (int i){
-	int pnultimo = 0, ultimo = 1, prox;
+    int pnultimo = 0, ultimo = 1, prox;
 	
    if(i == 0){ return 0;}
 	

@@ -1,1 +1,1 @@
-Olá! Esses são meus algoritmos referentes as displinas: Algoritmos e Estrutura de Dados I // Laboratório de Programação A
+Olá! Esses são meus algoritmos referentes as disciplinas: Algoritmos e Estrutura de Dados I && Laboratório de Programação A
